@@ -20,7 +20,7 @@ public class Editorial {
 
     public Editorial(String nombreEditorial) {
         this.nombreEditorial = nombreEditorial;
-        this.codigoEditorial = getUltimoCodigoEditorial() + 1;
+        this.codigoEditorial = getUltimoCodigoEditorial();    
         ultimoCodigoEditorial++;
     }
 

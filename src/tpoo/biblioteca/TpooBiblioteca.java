@@ -306,12 +306,12 @@ public class TpooBiblioteca {
             biblioteca.registrarLibro(libro);
             exito = true;
         } catch (Exception ex) {
-            System.out.println("ERROR: OCURRIO UN ERROR AL REGISTRAR SOCIO.");
+            System.out.println("ERROR: OCURRIO UN ERROR AL REGISTRAR LIBRO.");
         } finally {
             if (exito) {
-                System.out.println("SOCIO REGISTRADO CON EXITO.");
+                System.out.println("LIBRO REGISTRADO CON EXITO.");
             } else {
-                System.out.println("SOCIO REGISTRADO SIN EXITO.");
+                System.out.println("LIBRO REGISTRADO SIN EXITO.");
             }
         }
     }

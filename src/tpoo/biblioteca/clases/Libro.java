@@ -23,7 +23,12 @@ public class Libro {
     private Date fechaPublicacion;
     private Integer cantidadLibros;
     
-    public Libro(String titulo, Autor autor, Genero categoria, Editorial editorial, Date fechaPublicacion, Integer cantidadLibros) {
+    public Libro(String titulo, 
+            Autor autor, 
+            Genero categoria, 
+            Editorial editorial, 
+            Date fechaPublicacion, 
+            Integer cantidadLibros) {
         this.titulo = titulo;
         this.autor = autor;
         this.categoria = categoria;
@@ -31,8 +36,8 @@ public class Libro {
         this.fechaPublicacion = fechaPublicacion;
         this.cantidadLibros = cantidadLibros;
         
+        this.codigoLibro = getUltimoCodigo();
         ultimoCodigo++;
-        this.codigoLibro = ultimoCodigo;
     }
 
     public String getTitulo() {
